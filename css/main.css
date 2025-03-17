@@ -2,6 +2,7 @@
 :root {
     --main-color: #19c8fa;
     --transparent-color: rgb(15 116 143 / 70%);
+    --section-padding: 100px
 }
 /* End Variables */
 
@@ -48,7 +49,6 @@ ul {
 
 /* Start Component */
 .main-heading {
-    padding: 100px;
     text-align: center;
 }
 .main-heading h2 {
@@ -64,7 +64,7 @@ ul {
     background-color: black;
     left: 50%;
     transform: translateX(-50%);
-    height: 2px;
+    height: 1.5px;
     width: 120px;
     bottom: -30px;
 }
@@ -261,7 +261,44 @@ header nav .form i {
     border: 1px solid var(--main-color);
     background-color: var(--main-color);
 }
-
-
 /* End Landing */
+
+/* Start Services */
+.services {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+@media only screen and (min-width: 768px) {
+    .services .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+        grid-column-gap: 40px;
+        grid-row-gap: 60px;
+    }
+}
+.services .service-box {
+    display: flex;
+}
+.services .service-box i {
+    margin-right: 50px;
+}
+@media only screen and (max-width: 767px) {
+    .services .service-box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .services .service-box i {
+        margin: 0 0 40px;
+    }
+}
+.services .service-box h3 {
+    margin-bottom: 30px;
+    color: var(--main-color);
+}
+.services .service-box p {
+    line-height: 2;
+}
+/* End Services */
 
