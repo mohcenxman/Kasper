@@ -477,3 +477,23 @@ header nav .form i {
     border: none;
 }
 /* End Video */
+
+/* Start About */
+.about {
+    padding-top: var(--section-padding);
+    overflow: hidden;
+    text-align: center;
+}
+.about .container img {
+    position: relative;
+    max-width: 100%;
+    bottom: -120px;
+    margin-top: -140px;
+}
+@media only screen and (max-width: 767px) {
+    .about .container img {
+        bottom: -50px;
+        margin-top: -50px;
+    }
+}
+/* End About */
