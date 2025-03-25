@@ -631,5 +631,42 @@ header nav .form i {
     background-color: var(--main-color);
     border-color: var(--main-color);
 }
-
+.skills-testemonials .skills .progress-box {
+    margin-bottom: 40px;
+}
+.skills-testemonials .skills .progress-box h4 {
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.skills-testemonials .skills .progress-box .progress-bar {
+    background-color: #dedadc;
+    height: 30px;
+}
+.skills-testemonials .skills .progress-box .progress-bar span {
+    display: block;
+    background-color: var(--main-color);
+    height: 100%;
+    position: relative;
+}
+.skills-testemonials .skills .progress-box .progress-bar span::before {
+    content: attr(data-progress);
+    position: absolute;
+    background-color: black;
+    color: white;
+    width: 40px;
+    padding: 4px 0;
+    text-align: center;
+    top: -35px;
+    right: -20px;
+}
+.skills-testemonials .skills .progress-box .progress-bar span::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px;
+    border-color: black transparent transparent;
+    right: -6px;
+    top: -10px;
+}
 /* End Skills And Testemonials */
