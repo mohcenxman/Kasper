@@ -558,3 +558,78 @@ header nav .form i {
 .stats .container .box p {
 }
 /* End Stats */
+
+/* Start Skills And Testemonials */
+.skills-testemonials {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.skills-testemonials .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+@media only screen and (min-width: 992px) {
+    .skills-testemonials .container > div {
+        flex-basis: 45%;
+    }
+}
+.skills-testemonials .container > div > h3 {
+    margin: 0 0 30px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+}
+.skills-testemonials .container > div > p {
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 60px;
+}
+.skills-testemonials .testemonials .content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.skills-testemonials .testemonials .content img {
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+@media only screen and (max-width: 767px) {
+    .skills-testemonials .testemonials .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills-testemonials .testemonials .content img {
+        margin: 0 auto 20px;
+    }
+}
+.skills-testemonials .testemonials .content .text {
+    line-height: 1.8;
+    border-bottom: 1px solid #ccc;
+}
+.skills-testemonials .testemonials .content .text p {
+    text-align: right;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+.skills-testemonials .testemonials .bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.skills-testemonials .testemonials .bullets li {
+    height: 14px;
+    width: 14px;
+    border: 1px solid #777;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.skills-testemonials .testemonials .bullets li.active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+/* End Skills And Testemonials */
